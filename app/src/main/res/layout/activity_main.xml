@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.info.loottrack.Main"
+    android:background="@color/charcoal">
+
+    <EditText
+        android:id="@+id/editTextP"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="text|number"
+        android:singleLine="false"
+        android:textColor="@color/platinum"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewP"
+        app:layout_constraintStart_toEndOf="@+id/textViewP" />
+
+    <EditText
+        android:id="@+id/editTextG"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/gold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewG"
+        app:layout_constraintStart_toEndOf="@+id/textViewG" />
+
+    <EditText
+        android:id="@+id/editTextE"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/electrum"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewE"
+        app:layout_constraintStart_toEndOf="@+id/textViewE" />
+
+    <EditText
+        android:id="@+id/editTextS"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/silver"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewS"
+        app:layout_constraintStart_toEndOf="@+id/textViewS" />
+
+    <EditText
+        android:id="@+id/editTextC"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/copper"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewC"
+        app:layout_constraintStart_toEndOf="@+id/textViewC" />
+
+    <TextView
+        android:id="@+id/textViewG"
+        android:layout_width="60dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/Gold"
+        android:visibility="visible"
+        android:gravity="end"
+        app:layout_constraintStart_toStartOf="@+id/textViewP"
+        app:layout_constraintTop_toBottomOf="@+id/textViewP" />
+
+    <TextView
+        android:id="@+id/textViewC"
+        android:layout_width="60dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/Copper"
+        android:visibility="visible"
+        android:gravity="end"
+        app:layout_constraintStart_toStartOf="@+id/textViewS"
+        app:layout_constraintTop_toBottomOf="@+id/textViewS" />
+
+    <TextView
+        android:id="@+id/textViewS"
+        android:layout_width="60dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/Silver"
+        android:visibility="visible"
+        android:gravity="end"
+        app:layout_constraintStart_toStartOf="@+id/textViewE"
+        app:layout_constraintTop_toBottomOf="@+id/textViewE" />
+
+    <TextView
+        android:id="@+id/textViewE"
+        android:layout_width="60dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/Electrum"
+        android:visibility="visible"
+        android:gravity="end"
+        app:layout_constraintStart_toStartOf="@+id/textViewG"
+        app:layout_constraintTop_toBottomOf="@+id/textViewG" />
+
+    <TextView
+        android:id="@+id/textViewP"
+        android:layout_width="60dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="end"
+        android:text="@string/Platinum"
+        android:visibility="visible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewShares"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/Shares"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPotLabel" />
+
+    <EditText
+        android:id="@+id/editTextShares"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="1"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewShares" />
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextP"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewPotLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Current Pot"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewC" />
+
+    <TextView
+        android:id="@+id/textViewPotP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:text="0pp"
+        android:textColor="@color/platinum"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPotLabel" />
+
+    <TextView
+        android:id="@+id/textViewPotG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="0gp"
+        android:textColor="@color/gold"
+        app:layout_constraintStart_toEndOf="@+id/textViewPotP"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPotLabel" />
+
+    <TextView
+        android:id="@+id/textViewPotE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="0ep"
+        android:textColor="@color/electrum"
+        app:layout_constraintStart_toEndOf="@+id/textViewPotG"
+        app:layout_constraintTop_toTopOf="@+id/textViewPotG" />
+
+    <TextView
+        android:id="@+id/textViewPotS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="0sp"
+        android:textColor="@color/silver"
+        app:layout_constraintStart_toEndOf="@+id/textViewPotE"
+        app:layout_constraintTop_toTopOf="@+id/textViewPotG" />
+
+    <TextView
+        android:id="@+id/textViewPotC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="0cp"
+        android:textColor="@color/copper"
+        app:layout_constraintStart_toEndOf="@+id/textViewPotS"
+        app:layout_constraintTop_toTopOf="@+id/textViewPotG" />
+
+    <Button
+        android:id="@+id/buttonSplit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Split"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextShares"
+        app:layout_constraintStart_toStartOf="@+id/buttonAdd" />
+
+    <TextView
+        android:id="@+id/textViewSplitP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="0pp"
+        android:textColor="@color/platinum"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textViewSplitG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="0gp"
+        android:textColor="@color/gold"
+        app:layout_constraintStart_toEndOf="@+id/textViewSplitP"
+        app:layout_constraintTop_toTopOf="@+id/textViewSplitP" />
+
+    <TextView
+        android:id="@+id/textViewSplitE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="0ep"
+        android:textColor="@color/electrum"
+        app:layout_constraintStart_toEndOf="@+id/textViewSplitG"
+        app:layout_constraintTop_toTopOf="@+id/textViewSplitG" />
+
+    <TextView
+        android:id="@+id/textViewSplitS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="0sp"
+        android:textColor="@color/silver"
+        app:layout_constraintStart_toEndOf="@+id/textViewSplitE"
+        app:layout_constraintTop_toTopOf="@+id/textViewSplitE" />
+
+    <TextView
+        android:id="@+id/textViewSplitC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="0cp"
+        android:textColor="@color/copper"
+        app:layout_constraintStart_toEndOf="@+id/textViewSplitS"
+        app:layout_constraintTop_toTopOf="@+id/textViewSplitS" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/platinum"
+        android:text="Share Value"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextShares" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/platinum"
+        android:text="Left:"
+        app:layout_constraintStart_toEndOf="@+id/textViewSplitC"
+        app:layout_constraintTop_toTopOf="@+id/textViewSplitC" />
+
+    <TextView
+        android:id="@+id/textViewRemainder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/copper"
+        android:text="0cp"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toTopOf="@+id/textView11" />
+
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Reset"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSplit"
+        app:layout_constraintStart_toStartOf="@+id/buttonAdd"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAdd" />
+
+    <TextView
+        android:id="@+id/hiddenP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="00"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/hiddenG"
+        app:layout_constraintTop_toTopOf="@+id/hiddenG" />
+
+    <TextView
+        android:id="@+id/hiddenG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="00"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteY="439dp" />
+
+    <TextView
+        android:id="@+id/hiddenE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="00"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/hiddenS"
+        app:layout_constraintTop_toTopOf="@+id/hiddenP" />
+
+    <TextView
+        android:id="@+id/hiddenS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="00"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/hiddenP"
+        app:layout_constraintTop_toTopOf="@+id/hiddenP" />
+
+    <TextView
+        android:id="@+id/hiddenC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="00"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/hiddenE"
+        app:layout_constraintTop_toTopOf="@+id/hiddenP" />
+
+    <Button
+        android:id="@+id/buttonTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Test"
+        app:layout_constraintStart_toStartOf="@+id/buttonSplit"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRemainder" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Loot Track</string>
+    <string name="Platinum">Platinum</string>
+    <string name="Gold">Gold</string>
+    <string name="Electrum">Electrum</string>
+    <string name="Silver">Silver</string>
+    <string name="Copper">Copper</string>
+    <string name="Shares">Shares</string>
+</resources>
